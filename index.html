@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahorcado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceland&family=Press+Start+2P&family=Rubik+Distressed&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="icon1">
+        <img src="./images/certus-logo.png" alt="icon-certus" />
+      </div>
+      <div class="titulo">
+        <h1>Ahorcado</h1>
+      </div>
+      <div class="icono2">
+        <img src="./images/jovenes.png" alt="icon-jovenes-bicentenario" />
+      </div>
+    </header>
+    <main>
+      <div class="imagen-container">
+        <img class="imagen" src="./images/img0.png" alt="ahorcado" />
+      </div>
+      <div class="container">
+        <div class="marcadores">
+          <div class="marcador">
+            <p>Intentos</p>
+            <span class="intentos">07</span>
+          </div>
+          <div class="marcador">
+            <p>Aciertos</p>
+            <span class="aciertos">00</span>
+          </div>
+          <div class="marcador">
+            <p>Fallos</p>
+            <span class="fallos">00</span>
+          </div>
+        </div>
+        <div class="palabra">
+          <p class="palabra-adivinar">
+            <span class="letra"></span>
+            <span class="letra"></span>
+            <span class="letra"></span>
+            <span class="letra"></span>
+          </p>
+        </div>
+        <button class="play-btn" onclick="jugar()">JUGAR</button>
+        <div class="letras-container">
+          <button class="letra-btn">A</button>
+          <button class="letra-btn">B</button>
+          <button class="letra-btn">C</button>
+          <button class="letra-btn">D</button>
+          <button class="letra-btn">E</button>
+          <button class="letra-btn">F</button>
+          <button class="letra-btn">G</button>
+          <button class="letra-btn">H</button>
+          <button class="letra-btn">I</button>
+          <button class="letra-btn">J</button>
+          <button class="letra-btn">K</button>
+          <button class="letra-btn">L</button>
+          <button class="letra-btn">M</button>
+          <button class="letra-btn">N</button>
+          <button class="letra-btn">Ñ</button>
+          <button class="letra-btn">O</button>
+          <button class="letra-btn">P</button>
+          <button class="letra-btn">Q</button>
+          <button class="letra-btn">R</button>
+          <button class="letra-btn">S</button>
+          <button class="letra-btn">T</button>
+          <button class="letra-btn">U</button>
+          <button class="letra-btn">V</button>
+          <button class="letra-btn">W</button>
+          <button class="letra-btn">X</button>
+          <button class="letra-btn">Y</button>
+          <button class="letra-btn">Z</button>
+        </div>
+        <div class="resultado-container">
+          <p class="resultado-texto resultado-texto--positivo">ganaste</p>
+          <p class="resultado-texto resultado-texto--negativo">perdiste</p>
+          <h2 class="respuesta"></h2>
+          <button class="replay-btn" onclick="jugar()">VOLVER A JUGAR</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
