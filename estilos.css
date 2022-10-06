@@ -46,7 +46,7 @@ header {
   align-items: center;
   /* background: linear-gradient(207.8deg, #201e1c 16.69%, #363534 100%); */
   color: var(--gris);
-  justify-content: space-between;
+  justify-content: center;
   /* background oscuro con transparencia */
   background: rgba(0, 0, 0, 0.7);
 }
@@ -58,11 +58,12 @@ header img {
 }
 
 header h1 {
-  font-size: 4.5rem;
+  font-size: 6.5rem;
   color: var(--gris);
   margin: 0;
   padding: 0;
   align-self: center;
+  text-transform: uppercase;
 }
 
 main {
@@ -257,5 +258,64 @@ main .container {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* para moviles */
+@media screen and (max-width: 768px) {
+  header {
+    height: 40px;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  main {
+    flex-direction: column;
+  }
+  main .imagen-container img {
+    width: 150px;
+    object-fit: cover;
+    padding: 0;
+  }
+  main .container {
+    flex: 1;
+    padding: 0;
+  }
+  .container .marcadores {
+    width: 100%;
+    font-size: 3rem;
+    margin: 0;
+  }
+  .container .marcadores .marcador {
+    margin: 2px;
+  }
+  .container .palabra {
+    width: 100%;
+    font-size: 3rem;
+  }
+  .container .palabra span {
+    font-size: 3rem;
+  }
+  .container .play-btn {
+    font-size: 3rem;
+    margin: 10px;
+  }
+  .container .letra-btn {
+    font-size: 1rem;
+  }
+  .container .letras-container {
+    width: 100%;
+  }
+  .container .letras-container button {
+    margin: 5px;
+  }
+  .resultado-container {
+    font-size: 2rem;
+  }
+  .resultado-texto {
+    font-size: 3rem;
+  }
+  .replay-btn {
+    font-size: 1.5rem;
   }
 }

@@ -163,7 +163,7 @@ function iniciarJuego() {
     btn_letras[i].disabled = false;
     btn_letras[i].classList.remove("letra-btn--disabled");
   }
-  playAudio(clickAudio, false, 0.6);
+  playAudio(clickAudio, false, 0.4);
   fondoAudio.play();
 }
 function jugar() {
