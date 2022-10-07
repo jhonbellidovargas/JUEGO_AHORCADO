@@ -121,14 +121,16 @@ function escongerPalabra() {
   respuesta[0].innerHTML = palabra;
   // escondemos la palabra
   for (var letra in palabra) {
-    if (palabra.length > 5) {
-      if (letra == 0 || letra == palabra.length - 1) {
+    if (palabra.length <= 4) {
+      letras.push("-");
+    } else if (palabra.length > 4 && palabra.length <= 6) {
+      if (letra == 0) {
         letras.push(palabra[letra]);
       } else {
         letras.push("-");
       }
     } else {
-      if (letra == 0) {
+      if (letra == 0 || letra == palabra.length - 1) {
         letras.push(palabra[letra]);
       } else {
         letras.push("-");
@@ -166,7 +168,6 @@ function victoria() {
   resultadoPositivo[0].style.display = "flex";
   resultadoNegativo[0].style.display = "none";
   playAudio(victoriaAudio, false, 0.7);
-
 }
 
 function derrota() {
