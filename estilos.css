@@ -30,6 +30,7 @@ html {
   font-family: var(--font-1), sans-serif;
   /* obtener un cursor gamer */
   cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png), default;
+  background-color: #000000;
 }
 body {
   background-image: url(./imagenes/fondo.webp);
@@ -65,6 +66,26 @@ header h1 {
   align-self: center;
   text-transform: uppercase;
 }
+header .header-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  background-color: var(--gris);
+  border-radius: 0 0 0 50%;
+}
+header .header-icon .audio-icon {
+  cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png), pointer !important;
+  object-position: center;
+  transition: all 0.3s ease;
+  /* imagen cubre todo el contenedor padre */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
 
 main {
   display: flex;
@@ -98,15 +119,14 @@ main .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
 .container .marcadores {
-  width: 50%;
   color: var(--gris);
   text-align: center;
   font-size: 3rem;
-  margin: 10px;
+  margin: 10px 0;
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -119,7 +139,6 @@ main .container {
 }
 
 .container .palabra {
-  width: 80%;
   color: var(--gris);
   text-align: center;
 }
@@ -146,7 +165,7 @@ main .container {
   background: rgba(0, 0, 0, 0.7);
   color: var(--gris);
   padding: 10px 20px;
-  margin: 30px;
+  margin: 30px 0;
   cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png), pointer !important;
 }
 .container .letra-btn {
@@ -217,7 +236,7 @@ main .container {
   font-family: var(--font-3);
   text-transform: uppercase;
   height: 100px;
-  animation: resultado-texto  1s infinite;
+  animation: resultado-texto 1s infinite;
 }
 .resultado-texto--positivo {
   color: #048604;
@@ -269,6 +288,23 @@ main .container {
   header h1 {
     font-size: 2.5rem;
   }
+
+  header .header-icon {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+
+  header .header-icon .audio-icon {
+    object-position: center;
+    transition: all 0.3s ease;
+    /* imagen cubre todo el contenedor padre */
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+  }
+
   main {
     flex-direction: column;
   }
