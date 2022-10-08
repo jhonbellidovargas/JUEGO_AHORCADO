@@ -196,7 +196,7 @@ main .container {
   background: #282623;
   color: #dbd9d9;
   /* cursor: not-allowed; */
-  cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png), default;
+  cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png), default !important;
 }
 .container button:hover {
   background: #000000;
