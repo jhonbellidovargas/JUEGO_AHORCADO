@@ -185,6 +185,7 @@ main .container {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 0 5px;
 }
 
 .container .letras-container button {
@@ -194,7 +195,8 @@ main .container {
 .letras-container .letra-btn--disabled {
   background: #282623;
   color: #dbd9d9;
-  cursor: not-allowed;
+  /* cursor: not-allowed; */
+  cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png), default;
 }
 .container button:hover {
   background: #000000;
